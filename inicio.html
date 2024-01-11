@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="globals.css" />
-        <link rel="stylesheet" href="style.css" />
-        <enlace rel=”hoja de estilo” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integridad=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anónimo”></enlace>
-    </head>
-    <body>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Corrigiendo la etiqueta link para Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Añadiendo la clase 'container' para centrar y dar margen al contenido -->
+    
+
+          
         <div class="frame">
             <div class="overlap">
                 <div class="rectangle"></div>
@@ -18,45 +23,36 @@
                 <div class="text-wrapper-2">POLÍTICA DE COOKIES</div>
                 <div class="text-wrapper-3">POLÍTICA DE PRIVACIDAD</div>
                 <div class="div-2">
-                    <div class="qui-nes-somos">QUIÉNES SOMOS</div>
-                    <div class="eventos">EVENTOS</div>
+                    <div class="container  d-flex justify-content-center">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent ">
+                        <!-- <a class="navbar-brand" href="#">Mi Sitio</a> -->
+                        <button class="navbar-toggler btn-xl" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center w-100 " id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#" onclick="mostrarContenido('quienesSomos')">QUIÉNES SOMOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#" onclick="mostrarContenido('contactos')">CONTACTOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#" onclick="mostrarContenido('eventos')">EVENTOS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    </div>
+                
                     <div class="overlap-group">
                         <p class="p">coffee | work | brunch | networking</p>
                         <img class="image" src="img/image-17.png" />
                     </div>
-                    <div class="contacto">CONTACTO</div>
+                    
                     <div class="div-wrapper"><p class="text-wrapper-4">¡PÍDENOS NUESTRA TARJETA DE SELLOS!</p></div>
-                    <div class="simplemente">Simplemente, <br />delicioso</div>
-                    <div class="text-wrapper-5">PAPUA NUEVA GUINEA</div>
-                    <div class="text-wrapper-6">PAPUA NUEVA GUINEA</div>
-                    <div class="text-wrapper-7">PAPUA NUEVA GUINEA</div>
-                    <div class="flexcontainer">
-                        <p class="text">
-                            <span class="span"
-                                >Tómate un respiro disfrutando del mejor café en nuestros cómodos sofás y disfruta de tus momentos de
-                                descanso con el mejor tentenpié. <br
-                            /><br>¡Siéntete como en casa!</span>
-                        </p>
-                        <p class="text"><span class="span"></span></p>
-                    </div>
-                    <div class="flexcontainer-2">
-                        <p class="text">
-                            <span class="span"
-                                >Tómate un respiro disfrutando del mejor café en nuestros cómodos sofás y disfruta de tus momentos de
-                                descanso con el mejor tentenpié. <br
-                            /><br>¡Siéntete como en casa!</span>
-                        </p>
-                        <p class="text"><span class="span"></span></p>
-                    </div>
-                    <div class="flexcontainer-3">
-                        <p class="text">
-                            <span class="span"
-                                >Tómate un respiro disfrutando del mejor café en nuestros cómodos sofás y disfruta de tus momentos de
-                                descanso con el mejor tentenpié. <br
-                            /><br>¡Siéntete como en casa!</span>
-                        </p>
-                        <p class="text"><span class="span"></span></p>
-                    </div>
+
+
                     <div class="flexcontainer-4">
                         <p class="span-wrapper">
                             <span class="text-wrapper-8">Av. de Alfonso XIII, 97, 28016 Madrid<br /></span>
@@ -100,36 +96,65 @@
                         <div class="text-wrapper-15">NUESTROS PRODUCTOS</div>
                         <p class="text-wrapper-16">DISFRUTA DE NUESTROS MEJORES PRODUCTOS CUANDO NO PUEDAS VENIR</p>
                     </div>
-                    <div class="overlap-5">
-                        <div class="rectangle-12"></div>
+                    <div class="box">
+                        <div class="varieties">
+                        <div class="simplemente">Simplemente, <br />delicioso</div>
+                        <div class="text-wrapper">PAPUA NUEVA GUINEA</div>
+                        <div class="flexcontainer">
+                        <p class="text">
+                        <span class="span"
+                        >Tómate un respiro disfrutando del mejor café en nuestros cómodos sofás y disfruta de tus momentos de
+                        descanso con el mejor tentenpié. <br
+                        /></span>
+                        </p>
+                        <p class="text"><span class="span">¡Siéntete como en casa!</span></p>
+                        </div>
+                        <div class="overlap-group">
+                            <img class="vector" src="img/group.png" />
+                        </div>
+                        <div class="rectangle"></div>
+                        <img class="papu" src="img/papu.png" />
+                        <div class="div">PANAMA MAUNIER ESTATE</div>
+                        <div class="flexcontainer-2">
+                        <p class="text">
+                        <span class="span"
+                        >Tómate un respiro disfrutando del mejor café en nuestros cómodos sofás y disfruta de tus momentos de
+                        descanso con el mejor tentenpié. <br
+                        /></span>
+                        </p>
+                        <p class="text"><span class="span">¡Siéntete como en casa!</span></p>
+                        </div>
+                        <div class="overlap">
+                        <img class="vector" src="img/group.png" />
+
+                        </div>
+                        <div class="rectangle-2"></div>
                         <img class="pana" src="img/pana.png" />
-                    </div>
-                    <div class="overlap-6">
-                        <div class="text-wrapper-17">Detalles y alérgenos</div>
-                        <div class="rectangle-13"></div>
-                    </div>
-                    <div class="overlap-7">
-                        <div class="rectangle-12"></div>
-                        <img class="img-2" src="img/papu.png" />
-                    </div>
-                    <div class="group-wrapper"><img class="group-2" src="img/group-2.png" /></div>
-                    <div class="overlap-8">
-                        <div class="rectangle-14"></div>
-                        <img class="img-2" src="img/eti.png" />
-                    </div>
-                    <div class="overlap-9">
-                        <div class="text-wrapper-17">Detalles y alérgenos</div>
-                        <div class="rectangle-15"></div>
-                    </div>
-                    <div class="overlap-10">
-                        <div class="text-wrapper-17">Detalles y alérgenos</div>
-                        <div class="rectangle-15"></div>
-                    </div>
-                    <div class="img-wrapper"><img class="group-2" src="img/group-2.png" /></div>
-                    <div class="overlap-11"><img class="group-2" src="img/group-2.png" /></div>
+                        <div class="text-wrapper-2">ETHIOPIA GUJI NATURAL</div>
+                        <div class="flexcontainer-3">
+                        <p class="text">
+                        <span class="span"
+                        >Tómate un respiro disfrutando del mejor café en nuestros cómodos sofás y disfruta de tus momentos de
+                        descanso con el mejor tentenpié. <br
+                        /></span>
+                        </p>
+                        <p class="text"><span class="span">¡Siéntete como en casa!</span></p>
+                        </div>
+                        <div class="overlap-2">
+                        <img class="vector" src="img/group.png" />
+                        </div>
+                        <div class="rectangle-3"></div>
+                        <img class="eti" src="img/eti.png" />
+                        </div>
+                        </div>
+                   
                 </div>
             </div>
             <div class="rectangle-16"></div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
     </body>
 </html>
